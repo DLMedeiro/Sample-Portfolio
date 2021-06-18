@@ -1,0 +1,14 @@
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$primary-color: rgb(230, 195, 0);
+$dark-color: #333;
+$bg-img: url("../img/showcase.jpg");
+$page-size: 1280px;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #f4f4f4;
+  }
+}

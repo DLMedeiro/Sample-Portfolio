@@ -1,0 +1,67 @@
+.container {
+  padding: 0 5rem;
+  text-align: center;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+
+// Padding
+.py1 {
+  padding: 1rem 0;
+}
+.py2 {
+  padding: 2rem 0;
+}
+.py3 {
+  padding: 3rem 0;
+}
+
+// Margin
+.my1 {
+  margin: 1rem 0;
+}
+.my2 {
+  margin: 2rem 0;
+}
+.my2 {
+  margin: 2rem 0;
+}
+
+// Buttons
+.btn-shared {
+  padding: 0.75rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+
+  &:hover {
+    background-color: $primary-color;
+    transition: background-color 0.3s ease-in;
+  }
+}
+
+.btn {
+  &-light {
+    @extend .btn-shared;
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+
+  &-dark {
+    @extend .btn-shared;
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+}
+
+.short-underline {
+  width: 50px;
+  height: 2px;
+  background-color: $primary-color;
+  margin: auto;
+}
